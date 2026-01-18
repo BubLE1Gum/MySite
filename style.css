@@ -132,3 +132,30 @@ main {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
+.hobby-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.hobby-text {
+    flex: 1;
+    text-align: left;
+}
+
+.hobby-gif {
+    flex: 0 0 auto;
+}
+
+@media (max-width: 768px) {
+    .hobby-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hobby-text {
+        text-align: center;
+    }
+}
