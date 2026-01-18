@@ -1,0 +1,134 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #fdfdfd;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    color: #007bff;
+}
+
+main {
+    flex: 1;
+    padding: 20px 5%;
+    max-width: 2400px;
+    margin: 0 auto;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.page-title {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+.split-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.text-block {
+    flex: 2;
+    min-width: 300px;
+}
+
+.text-block ul {
+    list-style-type: square;
+    margin-bottom: 30px;
+}
+
+.text-block a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.text-block a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white !important;
+    padding: 10px 25px;
+    text-decoration: none !important;
+    border-radius: 50px;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0,123,255,0.3);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.widget-block {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    border: 1px solid #eee;
+}
+
+.widget-block h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
